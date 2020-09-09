@@ -23,7 +23,7 @@ This project is contains a [**Docker Compose**](https://docs.docker.com/compose/
     * Password: **postgres**
 
 2. To create a DB instance type the command below:
-* Run `CREATE DATABASE lpg OWNER postgres;`
+   * Run `CREATE DATABASE lpg OWNER postgres;`
 
 
 ### Running the application
@@ -33,8 +33,8 @@ This project is contains a [**Docker Compose**](https://docs.docker.com/compose/
 ### Build and Run Docker container
 * Run the `./gradlew build -x test`
 * Run `docker build -f ./Dockerfile -t gnovoab-lpg-service:local .`
-* Run `docker run --rm -it -p 8761:8761 -e spring.profiles.active=docker --env MANAGEMENT_PATH=/admin --name gnovoab-lpg-service gnovoab-lpg-service:local` 
-
+* Run `docker run --rm -it -p 8080:8080 -e "SPRING_PROFILES_ACTIVE=docker" --env MANAGEMENT_PATH=/admin --name gnovoab-lpg-service gnovoab-lpg-service:local` 
+     
 
 
 ### Endpoints
