@@ -7,7 +7,7 @@ Leisure Pass Group :: Coding Assesment
 This project is contains a [**Docker Compose**](https://docs.docker.com/compose/)  file that contains all the infrastructure dependencies for the project to run. Hence will be required to have installed [Docker](https://www.docker.com/get-started) in your computer.
 
 
-###Install Infrastrcuture REquired
+### Install Infrastrcuture Dependencies
 1. Run `cd environment` from project root
 2. Run `docker-compose up`
 3. if it desired to DB only:
